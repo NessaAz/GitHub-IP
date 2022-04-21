@@ -14,6 +14,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { RepoCardComponent } from './components/repo-card/repo-card.component';
 import { RepoPageComponent } from './components/repo-page/repo-page.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SearchFormComponent } from './components/search-form/search-form.compon
     LandingPageComponent,
     RepoCardComponent,
     RepoPageComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
