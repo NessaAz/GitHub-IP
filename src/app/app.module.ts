@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { CompareFollowersPageComponent } from './components/compare-followers-page/compare-followers-page.component';
 import { FollowerCardComponent } from './components/follower-card/follower-card.component';
+import { FollowersPageComponent } from './components/followers-page/followers-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FollowerCardComponent } from './components/follower-card/follower-card.
     NavbarComponent,
     ProfileComponent,
     CompareFollowersPageComponent,
-    FollowerCardComponent
+    FollowerCardComponent,
+    FollowersPageComponent
   ],
   imports: [
     BrowserModule,
