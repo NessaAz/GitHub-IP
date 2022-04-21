@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowingPageComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+    ngOnInit(): void {
   }
 
 }
