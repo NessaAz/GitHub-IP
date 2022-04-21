@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { CompareFollowersPageComponent } from './components/compare-followers-page/compare-followers-page.component';
+import { FollowerCardComponent } from './components/follower-card/follower-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ProfileComponent,
-    CompareFollowersPageComponent
+    CompareFollowersPageComponent,
+    FollowerCardComponent
   ],
   imports: [
     BrowserModule,
