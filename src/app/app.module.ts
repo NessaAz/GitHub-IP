@@ -16,6 +16,7 @@ import { RepoPageComponent } from './components/repo-page/repo-page.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { ThemeDirective } from './customerDirectives/theme.directive';
+import { CloseModalDirective } from './shared/close-modal.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ThemeDirective } from './customerDirectives/theme.directive';
     RepoPageComponent,
     SearchFormComponent,
     UserCardComponent,
-    ThemeDirective
+    ThemeDirective,
+    CloseModalDirective
   ],
   imports: [
     BrowserModule,
