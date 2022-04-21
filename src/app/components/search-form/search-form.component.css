@@ -1,0 +1,12 @@
+.search-input {
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid rgba(1, 29, 56, 0.75);
+    color: rgba(1, 29, 56, 0.75);
+    font-size: 20px;
+    caret-color: rgba(1, 29, 56, 0.75);
+  }
+  .search-input:focus {
+    box-shadow: 0 0 5px rgba(5, 67, 124, 0.75);
+    transition: all 0.3s ease-in-out;
+  }
