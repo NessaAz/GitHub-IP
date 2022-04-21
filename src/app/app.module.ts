@@ -13,6 +13,7 @@ import { FollowingPageComponent } from './components/following-page/following-pa
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { RepoCardComponent } from './components/repo-card/repo-card.component';
 import { RepoPageComponent } from './components/repo-page/repo-page.component';
+import { SearchFormComponent } from './components/search-form/search-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RepoPageComponent } from './components/repo-page/repo-page.component';
     FollowingPageComponent,
     LandingPageComponent,
     RepoCardComponent,
-    RepoPageComponent
+    RepoPageComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
