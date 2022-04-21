@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, lastValueFrom } from 'rxjs';
 
+import { RequestLimitService } from './request-limit.service';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +15,7 @@ export class ProfileService {
 
   constructor(
     private http: HttpClient,
-    // private requestLimitService: RequestLimitService
+    private requestLimitService: RequestLimitService
   ) { 
     this.getUser(this.defaultUsername);
   }
