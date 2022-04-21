@@ -12,6 +12,7 @@ import { FollowingCardComponent } from './components/following-card/following-ca
 import { FollowingPageComponent } from './components/following-page/following-page.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { RepoCardComponent } from './components/repo-card/repo-card.component';
+import { RepoPageComponent } from './components/repo-page/repo-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RepoCardComponent } from './components/repo-card/repo-card.component';
     FollowingCardComponent,
     FollowingPageComponent,
     LandingPageComponent,
-    RepoCardComponent
+    RepoCardComponent,
+    RepoPageComponent
   ],
   imports: [
     BrowserModule,
