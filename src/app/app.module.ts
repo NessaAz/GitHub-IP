@@ -15,6 +15,7 @@ import { RepoCardComponent } from './components/repo-card/repo-card.component';
 import { RepoPageComponent } from './components/repo-page/repo-page.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
+import { ThemeDirective } from './customerDirectives/theme.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserCardComponent } from './components/user-card/user-card.component';
     RepoCardComponent,
     RepoPageComponent,
     SearchFormComponent,
-    UserCardComponent
+    UserCardComponent,
+    ThemeDirective
   ],
   imports: [
     BrowserModule,
