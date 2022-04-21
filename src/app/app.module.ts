@@ -11,6 +11,7 @@ import { FollowersPageComponent } from './components/followers-page/followers-pa
 import { FollowingCardComponent } from './components/following-card/following-card.component';
 import { FollowingPageComponent } from './components/following-page/following-page.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { RepoCardComponent } from './components/repo-card/repo-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     FollowersPageComponent,
     FollowingCardComponent,
     FollowingPageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    RepoCardComponent
   ],
   imports: [
     BrowserModule,
