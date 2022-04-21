@@ -9,6 +9,7 @@ import { CompareFollowersPageComponent } from './components/compare-followers-pa
 import { FollowerCardComponent } from './components/follower-card/follower-card.component';
 import { FollowersPageComponent } from './components/followers-page/followers-page.component';
 import { FollowingCardComponent } from './components/following-card/following-card.component';
+import { FollowingPageComponent } from './components/following-page/following-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FollowingCardComponent } from './components/following-card/following-ca
     CompareFollowersPageComponent,
     FollowerCardComponent,
     FollowersPageComponent,
-    FollowingCardComponent
+    FollowingCardComponent,
+    FollowingPageComponent
   ],
   imports: [
     BrowserModule,
