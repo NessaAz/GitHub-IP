@@ -1,10 +1,11 @@
-import { Directive } from '@angular/core';
+import { HostListener, Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appCloseModal]'
+  selector: '[closeModal]',
 })
-export class CloseModalDirective {
-
-  constructor() { }
-
+export class CloseModal {
+  @HostListener('window:keydown.escape', ['$event'])
+  closeOpenModal(event: KeyboardEvent) {
+    console.log('Escape pressed: ', event);
+  }
 }
