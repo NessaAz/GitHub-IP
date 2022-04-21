@@ -8,6 +8,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { CompareFollowersPageComponent } from './components/compare-followers-page/compare-followers-page.component';
 import { FollowerCardComponent } from './components/follower-card/follower-card.component';
 import { FollowersPageComponent } from './components/followers-page/followers-page.component';
+import { FollowingCardComponent } from './components/following-card/following-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FollowersPageComponent } from './components/followers-page/followers-pa
     ProfileComponent,
     CompareFollowersPageComponent,
     FollowerCardComponent,
-    FollowersPageComponent
+    FollowersPageComponent,
+    FollowingCardComponent
   ],
   imports: [
     BrowserModule,
