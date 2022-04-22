@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FollowingService } from 'src/app/services/following.service';
-import { UserService } from 'src/app/services/user.service';
-import { RequestLimitService } from 'src/app/services/request-limit.service';
+// import { UserService } from 'src/app/services/user.service';
+// import { RequestLimitService } from 'src/app/services/request-limit.service';
 
 @Component({
   selector: 'app-following-card',
@@ -13,18 +13,18 @@ export class FollowingCardComponent implements OnInit {
   following!: any;
   constructor(
     private followingService: FollowingService,
-    private userService: UserService,
-    private requestLimitService: RequestLimitService
+    // private userService: UserService,
+    // private requestLimitService: RequestLimitService
   ) {}
 
   ngOnInit(): void {
-    this.userService.user.subscribe((user) => this.getFollowing(user.login));
+    // this.userService.user.subscribe((this.user) => {this.getFollowing(user.login))};
   }
 
   getFollowing(username: string): void {
     this.followingService.getFollowing(username).then((following) => {
       this.following = following;
-      this.requestLimitService.getRequestLimit().subscribe();
+      // this.requestLimitService.getRequestLimit().subscribe();
     });
   }
 }

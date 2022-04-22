@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, lastValueFrom } from 'rxjs';
 
-import { RequestLimitService } from './request-limit.service';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -13,10 +12,7 @@ export class ProfileService {
   private userSource = new BehaviorSubject<any>(null);
   user = this.userSource.asObservable();
 
-  constructor(
-    private http: HttpClient,
-    private requestLimitService: RequestLimitService
-  ) { 
+  constructor(private http: HttpClient) {
     this.getUser(this.defaultUsername);
   }
 
@@ -49,7 +45,6 @@ export class ProfileService {
     );
     return await lastValueFrom(value)
       .then((result) => {
-        this.requestLimitService.getRequestLimit().subscribe();
         return result;
       })
       .catch((error) => error);

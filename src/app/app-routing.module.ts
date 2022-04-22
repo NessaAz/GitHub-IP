@@ -7,11 +7,12 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { RepoPageComponent } from './components/repo-page/repo-page.component';
 
 const routes: Routes = [
+  { path: 'home', component: LandingPageComponent },
   { path: '', component: LandingPageComponent },
-  { path: ':username/repos', component: RepoPageComponent },
-  { path: ':username/followers', component: FollowersPageComponent },
-  { path: ':username/following', component: FollowingPageComponent },
-  { path: ':username/compare', component: CompareFollowersPageComponent },
+  { path: 'repos', component: RepoPageComponent },
+  { path: 'followers', component: FollowersPageComponent },
+  { path: 'following', component: FollowingPageComponent },
+  { path: 'compare', component: CompareFollowersPageComponent },
   { path: '**', component: LandingPageComponent },
 ];
 

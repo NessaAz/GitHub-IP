@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { SearchFormComponent } from './components/search-form/search-form.compon
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { ThemeDirective } from './customerDirectives/theme.directive';
 import { CloseModal } from './shared/close-modal.directive';
+import { TimeagoPipe } from './timeago.pipe';
 
 @NgModule({
   declarations: [
@@ -24,21 +26,23 @@ import { CloseModal } from './shared/close-modal.directive';
     NavbarComponent,
     ProfileComponent,
     CompareFollowersPageComponent,
-    FollowerCardComponent,
+    // FollowerCardComponent,
     FollowersPageComponent,
-    FollowingCardComponent,
+    // FollowingCardComponent,
     FollowingPageComponent,
-    LandingPageComponent,
+    //LandingPageComponent,
     RepoCardComponent,
     RepoPageComponent,
     SearchFormComponent,
     UserCardComponent,
     ThemeDirective,
-    CloseModal
+    CloseModal,
+    TimeagoPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

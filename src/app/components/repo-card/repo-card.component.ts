@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
 
-import { Repo } from 'src/app/models/Repo';
+import { Repo } from 'src/app/models/repo.model';
 import { RepoService } from 'src/app/services/repo.service';
-import { RequestLimitService } from 'src/app/services/request-limit.service';
+
 
 @Component({
   selector: 'app-repo-card',
@@ -17,7 +17,6 @@ export class RepoCardComponent implements OnInit {
 
   constructor(
     private repoService: RepoService,
-    private requestLimitService: RequestLimitService,
     private route: ActivatedRoute,
   ) {}
 
@@ -31,7 +30,6 @@ export class RepoCardComponent implements OnInit {
       .getRepos(username)
       .then((repos) => {
         this.repos = repos;
-        this.requestLimitService.getRequestLimit().subscribe();
       })
       .catch((error) => (this.repoError = error));
   }
