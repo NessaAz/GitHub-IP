@@ -2,16 +2,16 @@
   <!-- Landing Page Start -->
   <div class="container center-container" #noUsers>
     <div class="row">
-      <div class="col-10 col-lg-8 mx-auto pt-4">
+      <div class="col-5 col-lg-12 mx-auto pt-4">
         <h3 class="home-para-1 py-2">
-          Make <strong class="gradient-text">ghDEMO</strong> Useful
+          Make <strong class="gradient-text">ghDEMO</strong> Your go to
         </h3>
         <h3 class="gradient-text home-para-2 py-2 pb-5 pb-sm-0">
-          Find A Github User
+          When you need to find A Github User
         </h3>
         <p class="d-none d-sm-block home-para-3 mx-auto py-3">
-          ghDEMO is a web app that helps you fetch Github users, view their
-          profile details and repositories
+          ghDEMO is a web application that helps you find GitHub profiles, view their
+           details and repositories
         </p>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <!-- Fetched Users Start -->
     <!-- <app-search-form (newSearch)="newSearch($event)"></app-search-form> -->
     <!-- Fetched Users End -->
-    <h6 class="text-white" *ngIf="defaultUser">
+    <h6 class="text-dark" *ngIf="defaultUser">
       User:
       <!-- <a routerLink="/{{ defaultUser.login }}/repos"> -->
       <strong class="gradient-text">{{ defaultUser.login }}
